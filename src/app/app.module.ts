@@ -4,15 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { LoginListComponent } from './login/login-list/login-list.component';
 import { LogoutComponent } from './logout/logout.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [					
     AppComponent,
     LoginComponent,
-    LoginListComponent,
-      LogoutComponent
+      LogoutComponent,
+      NavBarComponent,
+      LandingComponent,
+      AboutComponent,
+      RegisterComponent
    ],
   imports: [
     BrowserModule,
