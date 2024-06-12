@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,17 +10,29 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { ContactComponent } from './contact/contact.component';
+
+const routes: Routes = [
+  { path: '', component: LandingComponent },
+  { path: 'aboutPage', component: AboutComponent },
+  { path: 'contactPage', component: ContactComponent },
+  { path: 'registerPage', component: RegisterComponent },
+  { path: 'loginPage', component: LoginComponent },
+];
 
 @NgModule({
-  declarations: [					
+  declarations: [		
+    NavBarComponent,
+    AboutComponent,		
     AppComponent,
     LoginComponent,
-      LogoutComponent
+    LogoutComponent,
+      ContactComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
