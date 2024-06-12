@@ -9,16 +9,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [					
     AppComponent,
     LoginComponent,
-      LogoutComponent,
-      NavBarComponent,
-      LandingComponent,
-      AboutComponent,
-      RegisterComponent
+      LogoutComponent
    ],
   imports: [
     BrowserModule,
