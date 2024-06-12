@@ -11,6 +11,7 @@ import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     LogoutComponent,
-      ContactComponent
+      ContactComponent,
+    HomepageComponent
    ],
   imports: [
     BrowserModule,
