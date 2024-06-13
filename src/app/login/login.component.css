@@ -11,6 +11,7 @@ body {
     align-items: center;
 }
 .container {
+    margin-right: 110px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,7 +9,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav{
-    background-color: #f9f7dc;
+    background-color: #956935;
     box-shadow: 3x 3x 5x rgba(0, 0, 0, 0.1);
 }
 nav ul{
@@ -27,7 +27,7 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
 }
 nav a:hover{
     background-color: #f9f7dc;

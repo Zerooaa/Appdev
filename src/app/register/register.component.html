@@ -8,32 +8,32 @@
 </head>
 <body>
   <div class="container">
-    <div class="title">Registration</div>
-    <form actions="#">
+    <div class="title">Register</div>
+    <form action="registration.php" method="post">
       <div class="user-details">
         <div class="input-box">
           <span class="details">Username</span>
-          <input type="text" placeholder="Enter Your Username" required>
+          <input type="text" id="userName" name="userName" placeholder="Enter Your Username" required>
         </div>
         <div class="input-box">
           <span class="details">Full Name</span>
-          <input type="text" placeholder="Enter Your Full Name" required>
+          <input type="text"id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
         </div>
         <div class="input-box">
           <span class="details">Email</span>
-          <input type="text" placeholder="Enter Your Email" required>
+          <input type="text" id="userEmail" name="userEmail" placeholder="Enter Your Email" required>
         </div>
         <div class="input-box">
           <span class="details">Phone Number</span>
-          <input type="text" placeholder="Enter Your Phone Number" required>
+          <input type="text" id="userPhone" name="userPhone" placeholder="Enter Your Phone Number" required>
         </div>
         <div class="input-box">
           <span class="details">Password</span>
-          <input type="text" placeholder="Enter Your Passoword" required>
+          <input type="password" id="userPassword" name="userPassword" placeholder="Enter Your Passoword" required>
         </div>
         <div class="input-box">
           <span class="details">Confirm Password</span>
-          <input type="text" placeholder="Confirm your Password" required>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your Password" required>
         </div>
       </div>
       <div class="registerButton">
