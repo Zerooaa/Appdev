@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PostPopupComponent } from './post-popup/post-popup.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
     LoginComponent,
     LogoutComponent,
     ContactComponent,
-    HomepageComponent
+    HomepageComponent,
+    PostPopupComponent
    ],
   imports: [
     BrowserModule,

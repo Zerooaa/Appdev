@@ -32,7 +32,7 @@ body {
 }
 .login-container h2 {
     margin-bottom: 20px;
-    color: #795548;
+    color: #763c0d;
 }
 .login-container form input {
     width: 100%;
@@ -52,18 +52,18 @@ body {
 .login-container form button {
     width: 55%;
     padding: 10px;
-    background-color: #795548;
+    background-color: #956935;
     color: #FFF;
     border: none;
     border-radius: 30px;
     cursor: pointer;
 } 
 .login-container form button:hover {
-    background-color: #6D4C41;
+    background-color: #763c0d;
 }
 .login-container p {
     margin-top: 20px;
-    color: #795548;
+    color: #956935;
 }
 .login-container p a {
     color: #FFA726;
