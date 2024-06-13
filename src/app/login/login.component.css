@@ -38,23 +38,23 @@ body {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #D7CCC8;
-    border-radius: 5px;
+    border-radius: 30px;
 }  
 .login-container form .forgot-password {
     display: block;
     text-align: right;
-    margin-top: -10px;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: #FFA726;
     text-decoration: none;
 } 
 .login-container form button {
-    width: 100%;
+    width: 55%;
     padding: 10px;
     background-color: #795548;
     color: #FFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
 } 
 .login-container form button:hover {
