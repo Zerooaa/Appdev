@@ -22,12 +22,15 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/landingPage', pathMatch: 'full'},
   { path: 'landingPage', component: LandingComponent },
   { path: 'aboutPage', component: AboutComponent },
   { path: 'contactPage', component: ContactComponent },
   { path: 'registerPage', component: RegisterComponent },
   { path: 'loginPage', component: LoginComponent },
+  { path: 'logoutPage', component: LogoutComponent },
   { path: 'homePage', component: HomepageComponent },
+  { path: 'postPopup', component: PostPopupComponent },
 ];
 
 @NgModule({

@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation Bar</title>
   <link rel="stylesheet" type="text/css" href="nav-bar.component.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <nav>
-      <ul> 
-        <li *ngIf="!loggedIn()"><a href="/landingPage">WanderPets</a></li>
-        <li *ngIf="!loggedIn()"><a href="/aboutPage">About</a></li>
-        <li *ngIf="!loggedIn()"><a href="/contactPage">Contact</a></li>
-        <li *ngIf="!loggedIn()"><a href="/registerPage">Register</a></li>
-        <li *ngIf="!loggedIn()"><a href="/loginPage">Login</a></li>
-
-        <div *ngIf="loggedIn()" class="drowdown mr-5" dropdown>
-          <a href="#" class="dropdown-toggle text-light" dropdownToggle (click)="false">Welcome {{loggedinUser}}</a>
-          <div class="dropdown-menu" *dropdownMenu>
-            <a href="/profilePage" class="dropdown-item">
-              <i class="fas fa-tachometer-alt"></i>Profile</a>
-            <a href="/settings" class="dropdown-item">
-              <i class="fas fa-user-circle"></i>Settings</a>
-            <a (click)='OnLogout()' href="/logout" class="dropdown-item">
-              <i class="fas fa-sign-out-alt"></i>Logout</a>
-          </div>
-        </div>
+      <ul class="left-items">
+        <li *ngIf="!loggedIn()" class="logo-item"><a href="/landingPage" class="logo-hover" routerLinkActive="active"><img src="Logo3.png" class="logo">WanderPets</a></li>
       </ul>
       
+      <ul class="right-items">
+        <li *ngIf="!loggedIn()"><a routerLink="/aboutPage" routerLinkActive="active">About</a></li>
+        <li *ngIf="!loggedIn()"><a routerLink="/contactPage" routerLinkActive="active">Contact</a></li>
+        <li *ngIf="!loggedIn()"><a routerLink="/registerPage" routerLinkActive="active">Register</a></li>
+        <li *ngIf="!loggedIn()"><a routerLink="/loginPage" routerLinkActive="active">Login</a></li>
+        
+        <li *ngIf="loggedIn()" class="dropdown" dropdown>
+          <a href="#" class="dropdown-toggle" dropdownToggle (click)="false">Welcome {{loggedinUser}}</a>
+          <div class="dropdown-menu custom-dropdown-menu" *dropdownMenu>
+            <a href="/profilePage" class="dropdown-item"><i class="fas fa-tachometer-alt"></i>Profile</a>
+            <a href="/settings" class="dropdown-item"><i class="fas fa-user-circle"></i>Settings</a>
+            <a (click)='OnLogout()' href="/logout" class="dropdown-item"><i class="fas fa-sign-out-alt"></i>Logout</a>
+          </div>
+        </li>
+      </ul>
     </nav>
 </body>
 </html>

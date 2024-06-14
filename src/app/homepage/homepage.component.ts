@@ -7,23 +7,4 @@ import { Component } from '@angular/core';
 })
 
 export class HomepageComponent {
-
-  onMenuClick() {
-    console.log('Menu clicked');
-  }
-
-  isPopupVisible = false;
-
-  onAddPostClick() {
-    this.isPopupVisible = true;
-  }
-
-  onPopupClose() {
-    this.isPopupVisible = false;
-  }
-
-  onFilterClick() {
-    console.log('Filter clicked');
-  }
-
 }

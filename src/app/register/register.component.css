@@ -24,7 +24,7 @@ body{
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    color: #763c0d;
+    color: #956935;
 }
 .container .title:before{
     content:'';
@@ -50,7 +50,7 @@ form .user-details .input-box{
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
-    color: #763c0d;
+    color: #333;
 }
 .user-details .input-box input{
     height: 45px;
@@ -81,11 +81,9 @@ form .registerButton input{
 form .registerButton input:hover{
     background: #763c0d;
 }
-
 .container2{
     display: flex;
 }
-
 .ng-invalid.ng-touched{
     border-color: red;
 }
