@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
+import { PostPopupComponent } from './post-popup/post-popup.component';
 
 const routes: Routes = [
   { path: 'landingPage', component: LandingComponent },
