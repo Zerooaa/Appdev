@@ -41,7 +41,7 @@
           <span class="details">Phone Number</span>
           <input type="text" id="userPhone" formControlName="userPhone" placeholder="Enter Your Phone Number">
           <span *ngIf="!userPhone?.valid && (userPhone!.touched || userSubmitted)" class="error-block">
-            Input Numbers Only and 11 Characters Long
+            Input 11 Characters Long and Numbers Only
           </span>
         </div>
         <div class="input-box">

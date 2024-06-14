@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    margin-top: 140px;
+}
 .heading{
     width:90%;
     display: flex;

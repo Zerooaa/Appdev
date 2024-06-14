@@ -48,15 +48,15 @@
               <input type="tel" formControlName="contactPhone" name="contactPhone" class="input" required>
               <label for="">Phone</label>
               <span *ngIf="!contactPhone?.valid && contactPhone!.touched" class="error-block">
-                Input Numbers Only and 11 Characters Long
+                Input 11 Characters Long and Numbers Only
               </span>
             </div>
             <div class="input-box">
-              <textarea name="message"  formControlName="contactMessage" name="userMessage" class="input" required id="message" cols="30" rows="10"></textarea>
+              <textarea name="message"  formControlName="contactMessage" name="userMessage" class="input" placeholder="Message" required id="message" cols="30" rows="10"></textarea>
               <span *ngIf="!contactMessage?.valid && contactMessage!.touched" class="error-block">
                 Insufficient Message
               </span>
-            </div>
+            </div>  
             <input type="submit" class="btn" value="Submit">
         </form>
       </div>
