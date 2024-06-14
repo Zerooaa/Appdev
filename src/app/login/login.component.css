@@ -41,7 +41,10 @@ body {
     margin: 10px 0;
     border: 1px solid #956935;
     border-radius: 30px;
-}  
+}
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+    color: #956935;
+}
 .login-container form .forgot-password {
     display: block;
     text-align: right;
