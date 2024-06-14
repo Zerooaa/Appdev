@@ -10,17 +10,17 @@
 
     <header class="header-bar">
         <ul>
-            <li><img src="hamburger.png" alt="Menu" class="menu"></li>
+            <li><a href="#" (click)="onMenuClick()"><img src="hamburger.png" alt="Menu" class="menu"></a></li>
         </ul>
-        <a href="/" class="title">WanderPets</a>
+        <a href="#" class="title">WanderPets</a>
         <ul>    
-            <li><img src="add-post.png" alt="Add Post" class="add-post"></li>
-            <li><img src="filter.png" alt="Filter" class="filter"></li>
+            <li><a href="#" (click)="onAddPostClick()"><img src="add-post.png" alt="Add Post" class="add-post"></a></li>
+            <li><a href="#" (click)="onFilterClick()"><img src="filter.png" alt="Filter" class="filter"></a></li>
         </ul>
     </header>
 
     <main>
-     
+        <app-post-popup *ngIf="isPopupVisible" (close)="onPopupClose()"></app-post-popup>
     </main>
 
 </body>
