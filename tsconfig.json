@@ -17,6 +17,10 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/alertyfy.d.ts"
+    ],
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": [

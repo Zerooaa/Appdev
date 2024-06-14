@@ -78,3 +78,10 @@ form .registerButton input:hover{
 .container2{
     display: flex;
 }
+
+.ng-invalid.ng-touched{
+    border-color: red;
+}
+.error-block{
+    color: red;
+}
