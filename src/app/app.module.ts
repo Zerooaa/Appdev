@@ -17,7 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostPopupComponent } from './post-popup/post-popup.component';
 
 const routes: Routes = [
-  { path: 'landingPage', component: LandingComponent },
+  { path: '', component: LandingComponent },
   { path: 'aboutPage', component: AboutComponent },
   { path: 'contactPage', component: ContactComponent },
   { path: 'registerPage', component: RegisterComponent },
@@ -27,10 +27,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [		
     NavBarComponent,
-    LandingComponent,
     AboutComponent,		
     AppComponent,
-    RegisterComponent,
     LoginComponent,
     LogoutComponent,
     ContactComponent,

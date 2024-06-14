@@ -1,21 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f9f7dc;
 }
 .container{
     flex-direction: row;
-    margin-bottom: 200px;
+    margin-right: auto;
     max-width: 700px;
     width: 100%;
     padding: 25px 30px;
+    border-radius: 5px;
+    justify-content: spa;
 }
 .container .title{
     font-size: 25px;
@@ -77,5 +78,4 @@ form .registerButton input:hover{
 
 .container2{
     display: flex;
-    margin-bottom: 200px;
 }
