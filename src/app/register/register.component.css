@@ -50,6 +50,7 @@ form .user-details .input-box{
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
+    color: #763c0d;
 }
 .user-details .input-box input{
     height: 45px;
