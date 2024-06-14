@@ -18,7 +18,7 @@ import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
 
 const routes: Routes = [
-  { path: '', component: LandingComponent },
+  { path: 'landingPage', component: LandingComponent },
   { path: 'aboutPage', component: AboutComponent },
   { path: 'contactPage', component: ContactComponent },
   { path: 'registerPage', component: RegisterComponent },
@@ -28,13 +28,15 @@ const routes: Routes = [
 @NgModule({
   declarations: [		
     NavBarComponent,
-    AboutComponent,		
+    LandingComponent,
+    AboutComponent,	
+    RegisterComponent,	
     AppComponent,
     LoginComponent,
     LogoutComponent,
     ContactComponent,
     HomepageComponent,
-    RegisterComponent
+    PostPopupComponent,
    ],
   imports: [
       BrowserModule,
