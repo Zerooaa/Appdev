@@ -17,6 +17,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
 import { PostPopupComponent } from './post-popup/post-popup.component';
+import { AuthService } from './services/auth.service';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: 'landingPage', component: LandingComponent },
@@ -24,6 +27,7 @@ const routes: Routes = [
   { path: 'contactPage', component: ContactComponent },
   { path: 'registerPage', component: RegisterComponent },
   { path: 'loginPage', component: LoginComponent },
+  { path: 'homePage', component: HomepageComponent },
 ];
 
 @NgModule({
@@ -45,11 +49,14 @@ const routes: Routes = [
       ReactiveFormsModule,
       FormsModule,
       RouterModule.forRoot(routes),
-      HttpClientModule
+      HttpClientModule,
+      BsDropdownModule.forRoot(),
+      BrowserAnimationsModule
     ],
   providers: [
     UserServiceService,
-    AlertifyService
+    AlertifyService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

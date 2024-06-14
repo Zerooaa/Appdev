@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  loggedinUser!: string;
   constructor() { }
 
   ngOnInit() {
   }
 
+  loggedIn(){
+    this.loggedinUser = localStorage.getItem('token') ?? '';
+    return this.loggedinUser;
+  }
+  OnLogout(){
+    localStorage.removeItem('token');
+  }
 }

@@ -9,12 +9,25 @@
 <body>
     <nav>
       <ul> 
-        <li><a href="/landingPage">WanderPets</a></li>
-        <li><a href="/aboutPage">About</a></li>
-        <li><a href="/contactPage">Contact</a></li>
-        <li><a href="/registerPage">Register</a></li>
-        <li><a href="/loginPage">Login</a></li>
+        <li *ngIf="!loggedIn()"><a href="/landingPage">WanderPets</a></li>
+        <li *ngIf="!loggedIn()"><a href="/aboutPage">About</a></li>
+        <li *ngIf="!loggedIn()"><a href="/contactPage">Contact</a></li>
+        <li *ngIf="!loggedIn()"><a href="/registerPage">Register</a></li>
+        <li *ngIf="!loggedIn()"><a href="/loginPage">Login</a></li>
+
+        <div *ngIf="loggedIn()" class="drowdown mr-5" dropdown>
+          <a href="#" class="dropdown-toggle text-light" dropdownToggle (click)="false">Welcome {{loggedinUser}}</a>
+          <div class="dropdown-menu" *dropdownMenu>
+            <a href="/profilePage" class="dropdown-item">
+              <i class="fas fa-tachometer-alt"></i>Profile</a>
+            <a href="/settings" class="dropdown-item">
+              <i class="fas fa-user-circle"></i>Settings</a>
+            <a (click)='OnLogout()' href="/logout" class="dropdown-item">
+              <i class="fas fa-sign-out-alt"></i>Logout</a>
+          </div>
+        </div>
       </ul>
+      
     </nav>
 </body>
 </html>

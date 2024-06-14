@@ -17,11 +17,11 @@
     <div class="right">
       <div class="login-container">
         <h2>Login</h2>
-        <form actions="#">
-          <input type="email" id="userName" name="userName" placeholder="Email/Username" required>
-          <input type="password" id="userPassword" name="userPassword" placeholder="Password" required>
+        <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+          <input type="text" id="userName" required ngModel name="userName" placeholder="Email/Username" required>
+          <input type="password" id="userPassword" ngModel name="userPassword" placeholder="Password" required>
           <a href="" class="forgot-password">Forgot Password?</a>
-          <button type="submit">LOGIN</button>
+          <button [disabled]="!loginForm.valid" type="submit">LOGIN</button>
         </form>
         <p>Don't have an account? <a href="/registerPage">Sign-Up</a></p>
       </div>
