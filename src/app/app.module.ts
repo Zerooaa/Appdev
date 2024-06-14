@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -17,7 +16,6 @@ import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
-
 import { PostPopupComponent } from './post-popup/post-popup.component';
 
 const routes: Routes = [
@@ -36,7 +34,8 @@ const routes: Routes = [
     LoginComponent,
     LogoutComponent,
     ContactComponent,
-    HomepageComponent
+    HomepageComponent,
+    RegisterComponent
    ],
   imports: [
       BrowserModule,
