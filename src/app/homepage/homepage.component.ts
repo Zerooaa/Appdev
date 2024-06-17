@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class HomepageComponent {
+  postContent: string = '';
+  isExpanded: boolean = false;
+
+  handleInput() {
+    this.isExpanded = this.postContent.trim() !== '';
+  }
 }

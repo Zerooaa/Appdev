@@ -16,7 +16,6 @@ import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UserServiceService } from './services/user-service.service';
 import { AlertifyService } from './services/alertify.service';
-import { PostPopupComponent } from './post-popup/post-popup.component';
 import { AuthService } from './services/auth.service';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,7 +29,6 @@ const routes: Routes = [
   { path: 'loginPage', component: LoginComponent },
   { path: 'logoutPage', component: LogoutComponent },
   { path: 'homePage', component: HomepageComponent },
-  { path: 'postPopup', component: PostPopupComponent },
 ];
 
 @NgModule({
@@ -44,7 +42,6 @@ const routes: Routes = [
     LogoutComponent,
     ContactComponent,
     HomepageComponent,
-    PostPopupComponent,
    ],
   imports: [
       BrowserModule,

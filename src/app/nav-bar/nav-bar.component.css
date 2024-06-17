@@ -36,7 +36,8 @@ nav a {
     align-items: center;
     color: white;
 }
-nav a:not(.logo-hover):hover, nav a:not(.logo-hover).active {
+nav a:not(.logo-hover, .message, .title-hover):hover, 
+nav a:not(.logo-hover, .message, .title-hover).active {
     background-color: #f9f7dc;
     color: #cf6b21;
 }
@@ -44,6 +45,17 @@ nav a:not(.logo-hover):hover, nav a:not(.logo-hover).active {
     flex-grow: 1;
     display: flex;
     justify-content: flex-start;
+}
+nav .message1 {
+    height: 40px;
+    width: auto;
+}
+.center-items {
+    flex-grow: 1;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 150px;
 }
 .right-items {
     display: flex;
