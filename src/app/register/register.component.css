@@ -15,10 +15,9 @@ body{
     margin-right: auto;
     max-width: 700px;
     width: 100%;
-    padding: 25px 30px;
     border-radius: 5px;
     justify-content: spa;
-    position: relative; /* added */
+    position: relative;
 }
 .container .title{
     font-size: 25px;
@@ -39,12 +38,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative; /* added */
+    position: relative;
 }
 form .user-details .input-box{
-    margin: 12px 0 12px 0;
+    margin: 15px 0 15px 0;
     width: calc(100% / 2 - 20px);
-    position: relative; /* added */
+    position: relative;
 }
 .user-details .input-box .details{
     display: block;
@@ -64,7 +63,7 @@ form .user-details .input-box{
 form .registerButton{
     height: 45px;
     margin: 45px 0;
-    position: relative; /* added */
+    position: relative;
 }
 form .registerButton input{
     height: 100%;
@@ -91,7 +90,8 @@ form .registerButton input:hover{
     font-size: 12px;
     color: red;
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     left: 0;
     width: 100%;
+    top: 100%;
 }
