@@ -33,8 +33,25 @@
         </div>
     </div>
     <div class="filter">
-        <button>
+        <button (click)="toggleFilterPopup()">
             <img src="filter.png" alt="Filter">
         </button>
+        <div class="filter-popup" *ngIf="isPopupVisible">
+            <h2>Kind of Pet</h2>
+            <div class="filter-options">
+                <button class="filter-button">
+                    <img src="/cat-icon.png" alt="Cat">
+                    <span>Cat</span>
+                </button>
+                <button class="filter-button">
+                    <img src="/dog-icon.png" alt="Dog">
+                    <span>Dog</span>
+                </button>
+                <button class="filter-button">
+                    <img src="/rabbit-icon.png" alt="Rabbit">
+                    <span>Rabbit</span>
+                </button>
+            </div>
+        </div>
     </div>
 </div>

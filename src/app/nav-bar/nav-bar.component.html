@@ -10,13 +10,13 @@
 <body>
     <nav>
       <ul class="left-items">
-        <li *ngIf="!loggedIn()"><a href="/landingPage" class="logo-hover" routerLinkActive="active"><img src="Logo3.png" class="logo">WanderPets</a></li>
+        <li *ngIf="!loggedIn()"><a routerLink="/landingPage" class="logo-hover" routerLinkActive="active"><img src="Logo3.png" class="logo">WanderPets</a></li>
 
-        <li *ngIf="loggedIn()"><a href="/messagePage" class="message" routerLinkActive="active"><img src="message.png" class="message1"></a></li>
+        <li *ngIf="loggedIn()"><a routerLink="/messagePage" class="message" routerLinkActive="active"><img src="message.png" class="message1"></a></li>
       </ul>
       
       <ul class="center-items">
-        <li *ngIf="loggedIn()" class="title"><a href="/homePage" class="title-hover" routerLinkActive="active">WanderPets</a></li>
+        <li *ngIf="loggedIn()" class="title"><a routerLink="/homePage" class="title-hover" routerLinkActive="active">WanderPets</a></li>
       </ul>
 
       <ul class="right-items">
@@ -28,9 +28,9 @@
         <li *ngIf="loggedIn()" class="dropdown" dropdown>
           <a href="#" class="dropdown-toggle" dropdownToggle (click)="false">Welcome {{loggedinUser}}</a>
           <div class="dropdown-menu custom-dropdown-menu" *dropdownMenu>
-            <a href="/profilePage" class="dropdown-item"><i class="fas fa-tachometer-alt"></i>Profile</a>
-            <a href="/settings" class="dropdown-item"><i class="fas fa-user-circle"></i>Settings</a>
-            <a (click)='OnLogout()' href="/loginPage" class="dropdown-item"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            <a routerLink="/profilePage" class="dropdown-item"><i class="fas fa-tachometer-alt"></i>Profile</a>
+            <a routerLink="/settings" class="dropdown-item"><i class="fas fa-user-circle"></i>Settings</a>
+            <a (click)='OnLogout()' routerLink="/loginPage" class="dropdown-item"><i class="fas fa-sign-out-alt"></i>Logout</a>
           </div>
         </li>
       </ul>
