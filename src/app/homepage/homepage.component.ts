@@ -1,4 +1,9 @@
 import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { MessagesDetailsService } from '../services/messages-details.service';
+import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-homepage',
@@ -9,11 +14,18 @@ export class HomepageComponent {
   postContent: string = '';
   isExpanded: boolean = false;
   isPopupVisible: boolean = false;
+  selectedFile!: File;
+  imageToShow!: string | ArrayBuffer | null;
+  dataService: any;
 
-  constructor(private eRef: ElementRef, private renderer: Renderer2) {}
+  constructor(private eRef: ElementRef,
+    private renderer: Renderer2,
+    public service: MessagesDetailsService,
+    private toastr: ToastrService,
+    private http: HttpClient) { }
 
   handleInput() {
-    this.isExpanded = this.postContent.trim() !== '';
+    this.isExpanded = this.service.formMessage.postMessage.trim() !== '';
   }
 
   toggleFilterPopup() {
@@ -26,4 +38,18 @@ export class HomepageComponent {
       this.isPopupVisible = false;
     }
   }
-}
+
+    onSubmit(form: NgForm) {
+      if (form.valid) {
+        this.service.postRegisterDetails().subscribe({
+          next: (res: any) => {
+            console.log(res);
+            this.service.resetForm(form);
+            this.toastr.success('Submitted successfully', 'Register Details');
+          },
+          error: (err: any) => { console.log(err); }
+        });
+      }
+    }
+  }
+
